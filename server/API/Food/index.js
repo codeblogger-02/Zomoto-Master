@@ -8,9 +8,43 @@ import { FoodModel } from "../../database/allModels"
 const Router = express.Router();
 
 /*
-route      /
-des         get all the restaurant detail based on city
+route      /r
+des         get all the food based on particular restaurant 
 params      none
 Access      public
 method      Post
 */
+
+Router.get("/r/:_id", async (req,res) => {
+    try {
+        const {_id} = req.params;
+        const foods = await FoodModel.find({restaurant: _id});
+
+        return res.json({foods});
+    } catch (error) {
+        return res.status(500).json({error: error.message});
+    }
+});
+
+/*
+route      /c
+des         get all the food based on particular category 
+params      category
+Access      public
+method      Post
+*/
+
+Router.get("/c/:category", async (req,res) => {
+    try {
+        const {category} = req.params;
+        const foods = await FoodModel.find({category: {$regex:category,$options:"i"},
+    });
+
+        return res.json({foods});
+    } catch (error) {
+        return res.status(500).json({error: error.message});
+    }
+});
+
+
+export default Router;
