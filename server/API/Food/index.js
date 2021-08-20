@@ -10,9 +10,9 @@ const Router = express.Router();
 /*
 route      /r
 des         get all the food based on particular restaurant 
-params      none
+params      id
 Access      public
-method      Post
+method      GET
 */
 
 Router.get("/r/:_id", async (req,res) => {
