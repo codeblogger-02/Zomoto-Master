@@ -5,7 +5,8 @@ const ImageSchema = new mongoose.Schema({
     images: [{
         locations: { type: String, required : true },
 
-    }]
+    },
+],
 },
 {
     timestamps:true,
