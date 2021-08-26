@@ -15,6 +15,8 @@ import Auth from "./API/Auth";
 import Restaurant from "./API/Restaurant";
 import Food from "./API/Food";
 import Image from "./API/Image";
+import Order from "./API/orders";
+import Reviews from "./API/reviews";
 
 //database connection
 import ConnectDB from "./database/connection";
@@ -38,7 +40,8 @@ zomoto.use("/auth",Auth);
 zomoto.use("/restaurant",Restaurant);
 zomoto.use("/food",Food);
 zomoto.use("/image", Image);
-
+zomoto.use("/order", Order);
+zomoto.use("/reviews", Reviews);
 
 zomoto.get("/" , (req,res) => res.json({message:"setup seccess"}));
 
