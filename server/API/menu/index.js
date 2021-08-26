@@ -12,7 +12,7 @@ route      /list
 des         get all menu based on id 
 params      _id
 Access      public
-method      Post
+method      get
 */
 
 
@@ -33,7 +33,7 @@ route      /list
 des         get all menu images based on id 
 params      _id
 Access      public
-method      Post
+method      get
 */
 
 Router.get("/image/:_id", async (req , res) => {
