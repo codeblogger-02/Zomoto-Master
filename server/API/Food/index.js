@@ -31,7 +31,7 @@ route      /c
 des         get all the food based on particular category 
 params      category
 Access      public
-method      Post
+method      GET
 */
 
 Router.get("/c/:category", async (req,res) => {
