@@ -15,10 +15,10 @@ Access      public
 method      GET
 */
 
-Router.get("/:_id" , async(req , res ) => {
+Router.get("/:_id" , passport.authenticate("jwt",{session:false}) ,async(req , res ) => {
     try {
         const {_id} = req.params;
-        const getOrders = await OrderModel.find({user:_id});
+        const getOrders = await OrderModel.findOne({user:_id});
 
         if(!getOrders){
             return res.status(404).json({error: "User not Found"});
