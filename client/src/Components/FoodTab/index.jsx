@@ -105,32 +105,7 @@ const LargeTabs = () => {
 
        const {type} = useParams();
    
-    // return (
-    // <>
     
-    // <div className="hidden lg:flex gap-14 container px-40 mx-4">
-       
-         
-    //      {allTypes.map((items) => {
-        
-    //     <div className="flex items-center gap-3">
-    //     <div className={`w-14 h-14 bg-${type === items.id ? items.activeColor:"gray"}-100 p-2 rounded-full`}>
-    //         <img 
-    //         src={type === items.id ? items.imageActive:items.imageDefault}
-    //          alt="delivery"
-    //          className="w-full h-full" />
-    //     </div>
-    //     <h3 className={type === items.id ? "text-xl text-zomato-400" : "text-xl text-gray-700 "}>{items.name}</h3>
-    //     </div>
-        
-
-    //      })}
-
-    // </div>
-    
-    // </>
-    // )
-
     return (
         <>
           <div className="hidden lg:flex gap-14 container px-40 my-8 mx-4">

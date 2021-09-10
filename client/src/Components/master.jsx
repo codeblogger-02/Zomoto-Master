@@ -6,8 +6,7 @@ import { useParams } from 'react-router-dom';
     const {type} = useParams()
 
     return (
-        <>
-         {type}   
+        <>  
         </>
     )
 };
