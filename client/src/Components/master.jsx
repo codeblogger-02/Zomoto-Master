@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 
 //Component
 import Delivery from './Delivery';
-import Dining from './Dining';
+import Dinning from './Dinning';
 import NightLife from './NightLife';
 import Nutrition from './Nutrition';
 
@@ -19,7 +19,7 @@ import Nutrition from './Nutrition';
 
          <div className="my-5">
          {type === "delivery" && <Delivery /> }
-         {type === "dining" && <Dining/>}
+         {type === "dinning" && <Dinning/>}
          {type === "night" && <NightLife/>}
          {type === "nutri" && <Nutrition/>}
          </div>

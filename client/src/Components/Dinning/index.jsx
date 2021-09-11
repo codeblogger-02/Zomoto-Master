@@ -4,7 +4,7 @@ import React from 'react'
 //component
 import DiningCarousal from './DiningCarousal';
 
-const Dining = () => {
+const Dinning = () => {
     return (
         <div>
             <DiningCarousal />
@@ -13,4 +13,4 @@ const Dining = () => {
     )
 }
 
-export default Dining;
+export default Dinning;
