@@ -80,10 +80,10 @@ const LargeTabs = () => {
       
        },
        {
-        id: `dining`,
+        id: `dinning`,
         imageDefault:"https://b.zmtcdn.com/data/o2_assets/78d25215ff4c1299578ed36eefd5f39d1616149985.png",
         imageActive:"https://b.zmtcdn.com/data/o2_assets/30fa0a844f3ba82073e5f78c65c18b371616149662.png",
-        name:"Dining out",
+        name:"Dinning out",
         activeColor: "blue",
         },
         {
