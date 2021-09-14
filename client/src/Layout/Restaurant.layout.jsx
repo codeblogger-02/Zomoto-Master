@@ -9,6 +9,8 @@ import RestaurantNavbar from "../Components/Navbar/restaurantNavbar";
 import ImageGrid from '../Components/restaurant/imageGrid';
 import InfoButtons from '../Components/restaurant/InfoButtons';
 import RestaurantInfo from '../Components/restaurant/RestaurantInfo';
+import TabContainer from '../Components/restaurant/Tabs';
+
 
 
 
@@ -42,7 +44,9 @@ const RestaurantLayout = () => {
           </InfoButtons>
       </div>
 
-
+      <div className="my-10">
+      <TabContainer />
+      </div>
         </div>
        
        </>
