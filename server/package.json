@@ -1,8 +1,10 @@
+  
 {
   "name": "server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+
   "scripts": {
     "start": "babel-node index",
     "dev": "nodemon --exec babel-node index"

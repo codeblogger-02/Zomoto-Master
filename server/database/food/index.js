@@ -21,6 +21,12 @@ restaurant:{
     ref:"Restaurants",
     required:true,
        },
+
+       reviews:{
+        type: mongoose.Types.ObjectId,
+        ref:"Reviews",
+        
+           },
     },
     {
         timestamps:true,
