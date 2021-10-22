@@ -99,17 +99,21 @@ const Overview = () => {
                </div>
                     <div>
                     <h4 className="text-xl font-medium">Direction</h4>
-                    <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false}>
+                  <div className="w-full h-48">
+                  <MapContainer center={[21.139499133646154, 79.05867991403582]} zoom={13} scrollWheelZoom={false}>
                            <TileLayer
                               attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                                  />
-                                   <Marker position={[51.505, -0.09]}>
+                                   <Marker position={[21.139499133646154, 79.05867991403582]}>
                               <Popup>
-                                 A pretty CSS3 popup. <br /> Easily customizable.
+                              The Pizza Project
                                            </Popup>
                                    </Marker>
                                  </MapContainer>
+                                
+                  </div>
+                  
                     </div>
                 </aside>
             </div>
