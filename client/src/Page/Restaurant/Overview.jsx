@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link , useParams} from 'react-router-dom';
 import {IoMdArrowDropright} from "react-icons/io";
+import {MdContentCopy} from "react-icons/md";
+import {FaDirections} from "react-icons/fa";
 import Slider from 'react-slick';
 import ReactStars from "react-rating-stars-component";
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
@@ -11,6 +13,8 @@ import MenuCollection from '../../Components/restaurant/MenuCollection';
 import MenuSimilarRestaurantCard from '../../Components/restaurant/MenuSimilarRestaurantCard';
 import { NextArrow,PrevArrow } from '../../Components/CarousalArrow';
 import ReviewCard from '../../Components/restaurant/Reviews/reviewCard';
+import Mapview from '../../Components/restaurant/Mapview';
+
 
 
 
@@ -85,6 +89,9 @@ const Overview = () => {
                              activeColor="#ffd700"
                         />
                    </div>
+                   <div className="my-4 w-full md:hidden flex flex-col gap-4">
+                   <Mapview title="The Pizza Project" phno="+919175952615" mapLocation={[21.139499133646154, 79.05867991403582]} address="Shop 2, Plot 1, 251/2, Ground Floor, Swapnil Rajni Apartment, WHC Road, Near Chavhan HA, Dharampeth, Nagpur"/>
+                   </div>
                    <div className="my-4 flex flex-col gap-4">
                        <ReviewCard />
                        <ReviewCard />
@@ -92,29 +99,8 @@ const Overview = () => {
                    </div>
                     
                 </div>
-                <aside style={{height: "fit-content"}} className="hidden md:block md:w-4/12 sticky rounded-xl top-2 bg-white p-3 shadow-md">
-               <div>
-               <h4 className="text-xl font-medium">Call</h4>
-                <h5 className="text-zomato-300 font-medium">+919588689295</h5>
-               </div>
-                    <div>
-                    <h4 className="text-xl font-medium">Direction</h4>
-                  <div className="w-full h-48">
-                  <MapContainer center={[21.139499133646154, 79.05867991403582]} zoom={13} scrollWheelZoom={false}>
-                           <TileLayer
-                              attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-                              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                                 />
-                                   <Marker position={[21.139499133646154, 79.05867991403582]}>
-                              <Popup>
-                              The Pizza Project
-                                           </Popup>
-                                   </Marker>
-                                 </MapContainer>
-                                
-                  </div>
-                  
-                    </div>
+                <aside style={{height: "fit-content"}} className="hidden md:flex md:w-4/12 sticky rounded-xl top-2 bg-white p-3 shadow-md flex flex-col gap-4">
+                    <Mapview title="The Pizza Project" phno="+919175952615" mapLocation={[21.139499133646154, 79.05867991403582]} address="Shop 2, Plot 1, 251/2, Ground Floor, Swapnil Rajni Apartment, WHC Road, Near Chavhan HA, Dharampeth, Nagpur"/>
                 </aside>
             </div>
         </>
