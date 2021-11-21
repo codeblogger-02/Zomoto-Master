@@ -11,7 +11,7 @@ const Photos = () => {
     "https://b.zmtcdn.com/data/reviews_photos/acd/7f3cce46604e5ba4509ebd1f5a501acd_1582530892.jpg",
     "https://b.zmtcdn.com/data/reviews_photos/0f5/4fcc96babddbbd5395c1575eb445c0f5_1563028924.jpg",
    "https://b.zmtcdn.com/data/reviews_photos/76a/4a24e144ce676ab8f0ccb1f4f518576a_1545502124.jpg",
-"https://b.zmtcdn.com/data/reviews_photos/506/54d8bde8ad31c59f7019ad6286e5f506_1560496512.jpg"]);
+      "https://b.zmtcdn.com/data/reviews_photos/506/54d8bde8ad31c59f7019ad6286e5f506_1560496512.jpg"]);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [CurrentImg, setCurrentImg] = useState(0);
     const closeViewer = () => setIsMenuOpen(false);
